@@ -1,0 +1,339 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/*external fonts*/
+
+@font-face {
+    font-family: ChaletLondonNineteenSeventy;
+    src: url(../content/fonts/ChaletLondonNineteenSeventy.ttf);
+}
+
+@font-face {
+    font-family: ChaletParisNineteenEighty;
+    src: url(../content/fonts/ChaletParisNineteenEighty.ttf);
+}
+
+/*heading*/
+
+h1 {
+    font-family: ChaletLondonNineteenSeventy;
+    background-color: #DE6548;
+    color: #FFF;
+    margin: 0 !important;
+    padding: 7px;
+}
+
+/*pcars cards*/
+
+#cars_tinder, .cars {
+    width: 350px;
+    height: 250px;
+}
+
+#cars_tinder {
+    position: relative;
+    margin: 60px auto auto auto;
+    font-family: ChaletParisNineteenEighty;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.cars {
+    position: absolute;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all .1s linear;
+}
+
+.cars:nth-child(1) {
+    z-index: 5;
+/ / animation : no 0.6 s infinite;
+}
+
+.cars:nth-child(2) {
+    z-index: 4;
+    top: 7px;
+    transform: scale(0.98);
+}
+
+.cars:nth-child(3) {
+    z-index: 3;
+    top: 14px;
+    transform: scale(0.96);
+}
+
+.cars:nth-child(4) {
+    z-index: 2;
+    transform: scale(0.94);
+}
+
+.cars:nth-child(5) {
+    z-index: 1;
+    transform: scale(0.94);
+}
+
+.cars:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+}
+
+.cars img {
+    width: 105%;
+    background: white;
+}
+
+.cars span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    line-height: 30px;
+    color: #555;
+}
+
+.cars span strong {
+    color: #000;
+}
+
+/*yes no button*/
+
+#cinder_buttons {
+    position: relative;
+    margin: 15px auto 0;
+    width: 100%;
+}
+
+#cinder_buttons .button {
+    width: 3em;
+    height: 3em;
+    background: #eee;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#cinder_buttons .no .trigger {
+    padding: 0px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    width: 132%;
+    height: 132%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(-13%, -50%);
+    transition: all .1s;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border:none;
+}
+
+#cinder_buttons .yes .trigger {
+    padding: 16px;
+    background: white;
+    display: block;
+    border-radius: 50%;
+    width: 130%;
+    height: 130%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(-13%, -50%);
+    transition: all .1s;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border:none;
+}
+
+.no {
+    left: 38px;
+}
+
+.no .trigger:before {
+    content: "\f00d";
+    font-family: 'FontAwesome';
+    font-size: 100px;
+    color: #c33;
+}
+
+.no:active {
+    transform: scale(0.75);
+    transition: all .05s linear;
+}
+
+.yes {
+    right: 38px;
+}
+
+.yes .trigger:before {
+    content: "\f004";
+    font-family: 'FontAwesome';
+    font-size: 80px;
+    color: #3b7;
+}
+
+.yes:active {
+    transform: scale(0.75);
+    transition: all .05s linear;
+}
+
+
+/*phone call button*/
+
+.phone_call .trigger:before {
+    content: "\f095";
+    font-family: 'FontAwesome';
+    font-size: 40px;
+    color: #DE6548;
+}
+
+.phone_call:active {
+    transform: scale(0.75);
+    transition: all .05s linear;
+}
+
+/*description page*/
+
+#description_page{
+    font-family: ChaletParisNineteenEighty;
+}
+
+#description_page img{
+    width:100%;
+    height:auto;
+}
+
+#description_page .button {
+    width: 4px;
+    height: 4px;
+    background: #eee;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#description_page .trigger {
+
+    background: white;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    transform: translate(-46%, -46%);
+    transition: all .1s;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    border:none;
+}
+
+
+/*back button*/
+
+.back {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: ChaletLondonNineteenSeventy;
+    float:right;
+}
+
+.back {
+    background-color: white;
+    color: black;
+}
+
+
+.card {
+    pointer-events: none;
+}
+
+.current {
+    pointer-events: all;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #615C5B;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 30px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/*reset button*/
+
+#reset_button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #DE6548;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 70%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 70px 0 0 13%;
+
+}
+
+#reset_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#reset_button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#reset_button:hover span {
+    padding-right: 25px;
+}
+
+#reset_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
